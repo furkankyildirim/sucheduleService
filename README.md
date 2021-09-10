@@ -47,9 +47,9 @@ Open http://127.0.0.1:5000 in a browser.
 ```shell
 # if your service does not have Gunicorn server
 $ pip3 install gunicorn
-$ ./ runner.sh
+$ ./runner.sh
 # to the service to run in the background
-$ ./ runner.sh &
+$ ./runner.sh &
 ```
 
 ## Edit Config File
