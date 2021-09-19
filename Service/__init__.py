@@ -23,6 +23,7 @@ def index():
 def getData():
     data = json.load(open('./data.json'))
     data['term'] = '202101'
+    data['version']= 22
     data['infoLink'] = 'https://suis.sabanciuniv.edu/prod/bwckschd.p_disp_detail_sched?term_in=202101&crn_in='
     return jsonify(data)
 
