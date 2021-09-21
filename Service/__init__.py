@@ -13,7 +13,13 @@ app = Flask(__name__)
 # @completed
 @app.route('/')
 def index():
-    return jsonify(Home='SUchedule')
+    data = dict()
+    data['name'] = 'SUchedule'
+    data['term'] = '202101'
+    data['version'] = 22
+    data['start-date'] = '27/09/2021'
+    data['end-date'] = '30/12/2021'
+    return jsonify(data)
 
 
 # method: getData
@@ -23,7 +29,7 @@ def index():
 def getData():
     data = json.load(open('./data.json'))
     data['term'] = '202101'
-    data['version']= 22
+    data['version'] = 22
     data['infoLink'] = 'https://suis.sabanciuniv.edu/prod/bwckschd.p_disp_detail_sched?term_in=202101&crn_in='
     return jsonify(data)
 
