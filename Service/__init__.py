@@ -17,8 +17,8 @@ def index():
     data['name'] = 'SUchedule'
     data['term'] = '202101'
     data['version'] = 22
-    data['start-date'] = '27/09/2021'
-    data['end-date'] = '30/12/2021'
+    data['start-date'] = '2021-09-27'
+    data['end-date'] = '2021-12-30'
     return jsonify(data)
 
 
