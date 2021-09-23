@@ -15,6 +15,16 @@ app = Flask(__name__)
 def index():
     data = dict()
     data['name'] = 'SUchedule'
+    return jsonify(data)
+
+
+# method: getVersion
+# Get version of service
+# @completed
+@app.route('/version')
+def getVersion():
+    data = dict()
+    data['name'] = 'SUchedule'
     data['term'] = '202101'
     data['version'] = 22
     data['start-date'] = '2021-09-27'
@@ -25,7 +35,7 @@ def index():
 # method: getData
 # Get the all lessons with their info.
 # @completed
-@app.route('/suchedule/data')
+@app.route('/data')
 def getData():
     data = json.load(open('./data.json'))
     data['term'] = '202101'
