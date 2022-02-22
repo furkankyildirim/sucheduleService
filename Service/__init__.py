@@ -26,7 +26,7 @@ def getVersion():
     data = dict()
     data['name'] = 'SUchedule'
     data['term'] = '202102'
-    data['version'] = 28
+    data['version'] = 29
     data['start-date'] = '2022-02-28'
     data['end-date'] = '2022-06-10'
     return jsonify(data)
@@ -39,7 +39,7 @@ def getVersion():
 def getData():
     data = json.load(open('./data.json'))
     data['term'] = '202102'
-    data['version'] = 28
+    data['version'] = 29
     data['infoLink'] = 'https://suis.sabanciuniv.edu/prod/bwckschd.p_disp_detail_sched?term_in=202102&crn_in='
     return jsonify(data)
 
