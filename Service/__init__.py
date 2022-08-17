@@ -25,10 +25,10 @@ def index():
 def getVersion():
     data = dict()
     data['name'] = 'SUchedule'
-    data['term'] = '202102'
-    data['version'] = 29
-    data['start-date'] = '2022-02-28'
-    data['end-date'] = '2022-06-10'
+    data['term'] = '202201'
+    data['version'] = 30
+    data['start-date'] = '2022-10-03'
+    data['end-date'] = '2023-01-06'
     return jsonify(data)
 
 
@@ -38,9 +38,9 @@ def getVersion():
 @app.route('/data')
 def getData():
     data = json.load(open('./data.json'))
-    data['term'] = '202102'
-    data['version'] = 29
-    data['infoLink'] = 'https://suis.sabanciuniv.edu/prod/bwckschd.p_disp_detail_sched?term_in=202102&crn_in='
+    data['term'] = '202201'
+    data['version'] = 30
+    data['infoLink'] = 'https://suis.sabanciuniv.edu/prod/bwckschd.p_disp_detail_sched?term_in=202201&crn_in='
     return jsonify(data)
 
 if __name__ == "__main__":
