@@ -38,9 +38,9 @@ def getVersion():
 @app.route('/data')
 def getData():
     data = json.load(open('./data.json'))
-    data['term'] = '202201'
-    data['version'] = 32
-    data['infoLink'] = 'https://suis.sabanciuniv.edu/prod/bwckschd.p_disp_detail_sched?term_in=202201&crn_in='
+    data['term'] = '202301'
+    data['version'] = 35
+    data['infoLink'] = f"https://suis.sabanciuniv.edu/prod/bwckschd.p_disp_detail_sched?term_in={data['term']}&crn_in="
     return jsonify(data)
 
 if __name__ == "__main__":
