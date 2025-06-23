@@ -1,12 +1,39 @@
-venv/
+# Dependencies
+node_modules/
+package-lock.json
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
 .idea/
-*.pyc
-__pycache__/
-instance/
-.pytest_cache/
-.coverage
-htmlcov/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Build
 dist/
 build/
-*.egg-info/
+.serverless/
+deployment.zip
+
+# AWS
+.aws/
+.aws-sam/
+
+# OS
 .DS_Store
+Thumbs.db
