@@ -9,7 +9,7 @@ const port = process.env.PORT || 3000;
 const config = {
     name: 'SUchedule',
     term: '202501',
-    version: 64,
+    version: 67,
     dates: {
         start: '2025-09-29',
         end: '2026-01-03'
