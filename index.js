@@ -8,8 +8,8 @@ const port = process.env.PORT || 3000;
 // Service configuration
 const config = {
     name: 'SUchedule',
-    term: '202503',
-    version: 81,
+    term: 'null',
+    version: 82,
     dates: {
         start: '2026-07-06',
         end: '2026-08-26'
